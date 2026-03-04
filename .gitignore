@@ -3,6 +3,7 @@
 *.pem
 .env
 secrets/
+.easyclaw-config.json
 
 # 临时文件
 *.tmp

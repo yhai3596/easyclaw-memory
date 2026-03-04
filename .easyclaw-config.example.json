@@ -1,0 +1,38 @@
+{
+  "github": {
+    "repository": "https://github.com/yhai3596/easyclaw-memory.git",
+    "token": "YOUR_GITHUB_PAT_HERE",
+    "auto_backup": true,
+    "backup_triggers": ["heartbeat", "manual"]
+  },
+  "heartbeat": {
+    "daily": {
+      "time": "09:00",
+      "timezone": "Asia/Shanghai",
+      "tasks": [
+        "check_tasks",
+        "consolidate_memory",
+        "check_schedule",
+        "generate_suggestions"
+      ]
+    },
+    "weekly": {
+      "day": "Sunday",
+      "time": "21:00",
+      "timezone": "Asia/Shanghai",
+      "tasks": [
+        "update_profile",
+        "project_review",
+        "backup_to_github",
+        "generate_weekly_report"
+      ]
+    }
+  },
+  "notification": {
+    "channel": "webchat",
+    "quiet_hours": {
+      "start": "23:00",
+      "end": "07:00"
+    }
+  }
+}
