@@ -1,0 +1,15 @@
+# 敏感信息
+*.key
+*.pem
+.env
+secrets/
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# 不需要备份的缓存
+cache/
+temp/
